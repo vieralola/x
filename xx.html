@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZR Management - Jasa Fake Order, Ulasan Google, Follower Sosmed</title>
+  <meta name="description" content="Jasa fake order marketplace, ulasan Google Maps, dan follower media sosial untuk meningkatkan popularitas bisnis online Anda secara cepat dan aman.">
+  <meta name="keywords" content="fake order, jasa ulasan Google, jasa follower Instagram, jasa boosting marketplace, review Google Maps, followers TikTok, ZR Management">
+  <meta name="author" content="ZR Management">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            secondary: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'float-reverse': 'float-reverse 5s ease-in-out infinite',
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            'float-reverse': {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(15px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500;
+      }
+      .bg-gradient-radial {
+        background: radial-gradient(circle at center, rgba(14, 165, 233, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+      }
+      .card-hover {
+        @apply transition-all duration-300 hover:scale-[1.03] hover:shadow-xl;
+      }
+      .blob {
+        @apply absolute rounded-full opacity-20 blur-xl -z-10;
+      }
+      .nav-link {
+        @apply relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-primary-700/90 backdrop-blur-md shadow-lg">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-white flex items-center">
+          <span class="text-gradient">ZR</span> Management
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link text-white font-medium">Beranda</a>
+          <a href="#services" class="nav-link text-white font-medium">Layanan</a>
+          <a href="#garansi" class="nav-link text-white font-medium">Garansi</a>
+          <a href="#faq" class="nav-link text-white font-medium">FAQ</a>
+        </div>
+        <a href="https://wa.me/+6281295984923" class="hidden md:inline-block bg-white hover:bg-gray-100 text-primary-700 font-semibold px-5 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
+          Hubungi Kami
+        </a>
+        <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden hidden pt-4" id="mobile-menu">
+        <div class="flex flex-col space-y-3">
+          <a href="#home" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-primary-600">Beranda</a>
+          <a href="#services" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-primary-600">Layanan</a>
+          <a href="#garansi" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-primary-600">Garansi</a>
+          <a href="#faq" class="text-white font-medium px-3 py-2 rounded-lg hover:bg-primary-600">FAQ</a>
+          <a href="https://wa.me/+6281295984923" class="bg-white text-primary-700 font-semibold px-3 py-2 rounded-lg text-center">
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-br from-primary-50 to-white py-20 md:py-28">
+    <div class="blob w-80 h-80 animate-float top-20 left-10 bg-primary-400"></div>
+    <div class="blob w-96 h-96 animate-float-reverse top-40 right-20 bg-secondary-400"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0" data-aos="fade-right">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-6 leading-tight">
+            Boost Bisnis Digital Anda
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+            Jasa Fake Order Marketplace, Ulasan Google Maps, dan Follower Media Sosial untuk meningkatkan kredibilitas bisnis Anda.
+          </p>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+            <a href="#fake-order" class="bg-gradient-to-r from-primary-600 to-secondary-500 hover:from-primary-700 hover:to-secondary-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              Pesan Sekarang
+            </a>
+            <a href="#services" class="bg-white hover:bg-gray-50 text-primary-700 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-primary-600 flex items-center">
+              <i class="fas fa-play-circle mr-2"></i> Lihat Layanan
+            </a>
+          </div>
+          <div class="flex flex-wrap justify-center lg:justify-start gap-6">
+            <div class="flex items-center">
+              <div class="flex -space-x-2">
+                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                <img class="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-700">500+ Klien</p>
+                <div class="flex">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2" data-aos="fade-left">
+          <div class="relative max-w-md mx-auto lg:max-w-none">
+            <img src="https://sunny-muffin-004d86.netlify.app/aset.png" alt="Ilustrasi Interaksi Digital" class="w-full max-w-lg mx-auto rounded-2xl shadow-2xl card-hover"/>
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg hidden md:block animate-pulse-slow">
+              <div class="flex items-center">
+                <div class="bg-primary-100 p-2 rounded-full">
+                  <i class="fas fa-check-circle text-primary-600 text-xl"></i>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-semibold">100% Aman</p>
+                  <p class="text-xs text-gray-500">Garansi Kepuasan</p>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-lg hidden md:block animate-pulse-slow">
+              <div class="flex items-center">
+                <div class="bg-secondary-100 p-2 rounded-full">
+                  <i class="fas fa-bolt text-secondary-600 text-xl"></i>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-semibold">Proses Cepat</p>
+                  <p class="text-xs text-gray-500">1-24 Jam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Section -->
+  <section id="why" class="py-20 bg-white relative overflow-hidden">
+    <div class="blob w-64 h-64 animate-float top-1/4 left-1/4 bg-primary-300/30"></div>
+    <div class="blob w-72 h-72 animate-float-reverse bottom-1/4 right-1/4 bg-secondary-300/30"></div>
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gradient inline-block mb-4">
+          Mengapa Perlu Boosting Digital?
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Di era kompetitif saat ini, eksposur awal sangat penting untuk menarik perhatian calon pelanggan.
+        </p>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2" data-aos="fade-right">
+          <div class="bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl shadow-lg">
+            <ul class="space-y-6">
+              <li class="flex items-start" data-aos="fade-right" data-aos-delay="100">
+                <div class="bg-primary-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-shield-alt text-primary-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-1">Meningkatkan Kepercayaan</h3>
+                  <p class="text-gray-600">Calon pembeli lebih percaya dengan toko yang memiliki banyak ulasan dan pesanan.</p>
+                </div>
+              </li>
+              <li class="flex items-start" data-aos="fade-right" data-aos-delay="200">
+                <div class="bg-primary-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-chart-line text-primary-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-1">Meningkatkan Visibilitas</h3>
+                  <p class="text-gray-600">Algoritma platform akan menampilkan bisnis Anda lebih sering ke pengguna.</p>
+                </div>
+              </li>
+              <li class="flex items-start" data-aos="fade-right" data-aos-delay="300">
+                <div class="bg-primary-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-rocket text-primary-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-800 mb-1">Mempercepat Pertumbuhan</h3>
+                  <p class="text-gray-600">Dapatkan momentum awal yang dibutuhkan untuk menarik pelanggan organik.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:w-1/2" data-aos="fade-left">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <img src="https://sunny-muffin-004d86.netlify.app/shopee.png" alt="Shopee" class="h-12 mx-auto mb-4"/>
+              <p class="text-center font-medium text-gray-700">Fake Order Shopee</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <img src="https://sunny-muffin-004d86.netlify.app/tiktokshop.png" alt="TikTok Shop" class="h-12 mx-auto mb-4"/>
+              <p class="text-center font-medium text-gray-700">Fake Order TikTok Shop</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <img src="https://sunny-muffin-004d86.netlify.app/tokopedia.png" alt="Tokopedia" class="h-12 mx-auto mb-4"/>
+              <p class="text-center font-medium text-gray-700">Fake Order Tokopedia</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <img src="https://sunny-muffin-004d86.netlify.app/lazada.png" alt="Lazada" class="h-12 mx-auto mb-4"/>
+              <p class="text-center font-medium text-gray-700">Fake Order Lazada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50 relative overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gradient inline-block mb-4">
+          Layanan Kami
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Berbagai solusi digital marketing untuk meningkatkan reputasi bisnis Anda.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-6 text-center h-full flex flex-col">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-box-open text-primary-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Jasa Fake Order</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Buat toko online Anda terlihat laris dengan pesanan yang realistis di berbagai marketplace.
+            </p>
+            <a href="#fake-order" class="text-primary-600 font-medium hover:text-primary-700 transition duration-300 inline-flex items-center justify-center">
+              Selengkapnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-6 text-center h-full flex flex-col">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-map-marked-alt text-primary-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Ulasan Google Maps</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Tingkatkan jumlah ulasan positif untuk menarik lebih banyak pelanggan ke tempat usaha Anda.
+            </p>
+            <a href="#fake-order" class="text-primary-600 font-medium hover:text-primary-700 transition duration-300 inline-flex items-center justify-center">
+              Selengkapnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Service Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="p-6 text-center h-full flex flex-col">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-mobile-alt text-primary-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Ulasan Aplikasi</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Jadikan aplikasi Anda tampak populer dengan ulasan positif di Google Play dan App Store.
+            </p>
+            <a href="#fake-order" class="text-primary-600 font-medium hover:text-primary-700 transition duration-300 inline-flex items-center justify-center">
+              Selengkapnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Service Card 4 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="400">
+          <div class="p-6 text-center h-full flex flex-col">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-users text-primary-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Followers Sosmed</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Dapatkan ribuan followers aktif dan organik dalam waktu singkat untuk berbagai platform.
+            </p>
+            <a href="#fake-order" class="text-primary-600 font-medium hover:text-primary-700 transition duration-300 inline-flex items-center justify-center">
+              Selengkapnya <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab Section -->
+  <section id="fake-order" class="py-20 bg-white relative overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col max-w-5xl mx-auto">
+        <!-- Tab Buttons -->
+        <div class="flex flex-wrap justify-center mb-8 rounded-full bg-gray-100 p-1 max-w-2xl mx-auto" data-aos="fade-up">
+          <button onclick="openTab(event, 'fo')" class="tab-button active px-6 py-2 font-medium rounded-full bg-gradient-to-r from-primary-600 to-secondary-500 text-white shadow-md">
+            Fake Order
+          </button>
+          <button onclick="openTab(event, 'ulasan')" class="tab-button px-6 py-2 font-medium rounded-full text-gray-700 hover:bg-gray-200 transition duration-300">
+            Ulasan Google
+          </button>
+          <button onclick="openTab(event, 'sosmed')" class="tab-button px-6 py-2 font-medium rounded-full text-gray-700 hover:bg-gray-200 transition duration-300">
+            Media Sosial
+          </button>
+        </div>
+        
+        <!-- Tab Content -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <!-- Fake Order Tab -->
+          <div id="fo" class="tab-content p-8" style="display:block;">
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-gradient mb-4">Jasa Fake Order Marketplace</h3>
+                <p class="text-gray-600 mb-6">Toko terlihat aktif dan laris di berbagai marketplace:</p>
+                <ul class="space-y-3 mb-6">
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Free konsultasi strategi</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Cocok untuk penjual baru agar terlihat kredibel</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Tersedia untuk Shopee, Tokopedia, TikTok Shop, dll</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Ratusan seller sudah terbukti berhasil</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:w-1/2 bg-gradient-to-br from-primary-50 to-white p-8 rounded-xl flex flex-col justify-center">
+                <div class="text-center">
+                  <p class="text-sm font-semibold text-primary-600 mb-2">HARGA MULAI DARI</p>
+                  <p class="text-3xl font-bold text-gradient mb-4">Rp 5.500/order</p>
+                  <a href="https://wa.me/+6281295984923" class="inline-block bg-gradient-to-r from-primary-600 to-secondary-500 hover:from-primary-700 hover:to-secondary-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ulasan Google Tab -->
+          <div id="ulasan" class="tab-content p-8" style="display:none;">
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-gradient mb-4">Jasa Ulasan Google Maps Dan Aplikasi</h3>
+                <p class="text-gray-600 mb-6">Tingkatkan reputasi bisnis Anda dengan ulasan positif:</p>
+                <ul class="space-y-3 mb-6">
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Meningkatkan visibilitas di pencarian lokal</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Membangun kepercayaan pelanggan baru</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Ulasan realistis, berisi foto dan deskripsi nyata</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Cocok untuk cafe, restoran, salon, klinik, dll</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:w-1/2 bg-gradient-to-br from-primary-50 to-white p-8 rounded-xl flex flex-col justify-center">
+                <div class="text-center">
+                  <p class="text-sm font-semibold text-primary-600 mb-2">HARGA MULAI DARI</p>
+                  <p class="text-3xl font-bold text-gradient mb-4">Rp 6.000/ulasan</p>
+                  <a href="https://wa.me/+6281295984923" class="inline-block bg-gradient-to-r from-primary-600 to-secondary-500 hover:from-primary-700 hover:to-secondary-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sosmed Tab -->
+          <div id="sosmed" class="tab-content p-8" style="display:none;">
+            <div class="flex flex-col md:flex-row gap-8">
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-gradient mb-4">Jasa Followers & Engagement Media Sosial</h3>
+                <p class="text-gray-600 mb-6">Dapatkan ribuan followers aktif dan organik:</p>
+                <ul class="space-y-3 mb-6">
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Followers Instagram, TikTok, Facebook, YouTube</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Likes, komentar, share, view, dll</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Akun real bukan BOT</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Meningkatkan engagement & eksposur konten</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="bg-primary-100 p-1 rounded-full mr-3 mt-0.5">
+                      <svg class="h-4 w-4 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">Garansi akun aman</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="md:w-1/2 bg-gradient-to-br from-primary-50 to-white p-8 rounded-xl flex flex-col justify-center">
+                <div class="text-center">
+                  <p class="text-sm font-semibold text-primary-600 mb-2">HARGA MULAI DARI</p>
+                  <p class="text-3xl font-bold text-gradient mb-4">Rp 6.000/100 followers</p>
+                  <a href="https://wa.me/+6281295984923" class="inline-block bg-gradient-to-r from-primary-600 to-secondary-500 hover:from-primary-700 hover:to-secondary-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garansi Section -->
+  <section id="garansi" class="py-20 bg-gradient-to-br from-primary-50 to-white relative overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gradient inline-block mb-4">
+          <i class="fas fa-shield-alt text-primary-600 mr-2"></i> Garansi Kami
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Kami memberikan jaminan kepuasan untuk semua layanan yang kami berikan
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="100">
+        <!-- Garansi 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-hand-holding-usd text-primary-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Uang Kembali</h3>
+          <p class="text-gray-600">
+            Jika layanan tidak sesuai dengan yang dijanjikan, kami akan mengembalikan uang Anda.
+          </p>
+        </div>
+        
+        <!-- Garansi 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-sync-alt text-primary-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Revisi Sampai Puas</h3>
+          <p class="text-gray-600">
+            Kami akan melakukan revisi sesuai permintaan Anda sampai Anda benar-benar puas.
+          </p>
+        </div>
+        
+        <!-- Garansi 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+          <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-lock text-primary-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Keamanan Terjamin</h3>
+          <p class="text-gray-600">
+            Tidak perlu memberikan akses login, akun Anda tetap aman dan terlindungi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni Section -->
+  <section class="py-20 bg-white relative overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gradient inline-block mb-4">
+          Apa Kata Klien Kami?
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Testimoni dari klien yang telah menggunakan layanan kami
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimoni 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-4">
+            <img class="w-12 h-12 rounded-full mr-4" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Testimoni">
+            <div>
+              <h4 class="font-semibold text-gray-800">Sarah Wijaya</h4>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Layanan fake ordernya sangat membantu toko saya yang baru buka. Sekarang sudah mulai dapat orderan beneran. Terima kasih ZR Management!"
+          </p>
+        </div>
+        
+        <!-- Testimoni 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center mb-4">
+            <img class="w-12 h-12 rounded-full mr-4" src="https://randomuser.me/api/portraits/men/54.jpg" alt="Testimoni">
+            <div>
+              <h4 class="font-semibold text-gray-800">Budi Santoso</h4>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Ulasan Google Maps untuk restoran saya meningkat drastis. Pelanggan jadi lebih percaya dan banyak yang datang setelah baca review."
+          </p>
+        </div>
+        
+        <!-- Testimoni 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center mb-4">
+            <img class="w-12 h-12 rounded-full mr-4" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimoni">
+            <div>
+              <h4 class="font-semibold text-gray-800">Dewi Anggraeni</h4>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Followers Instagram saya bertambah 5k dalam waktu singkat. Engagement juga meningkat. Very recommended!"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-gray-50 relative overflow-hidden">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gradient inline-block mb-4">
+          <i class="fas fa-question-circle text-primary-600 mr-2"></i> Pertanyaan Umum
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Temukan jawaban untuk pertanyaan yang sering diajukan
+        </p>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <details class="group">
+            <summary class="list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition duration-300">
+              <h3 class="text-lg font-semibold text-primary-700">Berapa lama proses pengerjaan?</h3>
+              <svg class="h-5 w-5 text-primary-600 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-gray-600">Proses mulai 1-24 jam setelah pembayaran dikonfirmasi, tergantung kompleksitas pesanan. Untuk layanan fake order biasanya selesai dalam 6-12 jam, sedangkan followers sosmed bisa lebih cepat (1-6 jam).</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <details class="group">
+            <summary class="list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition duration-300">
+              <h3 class="text-lg font-semibold text-primary-700">Apakah aman untuk toko saya?</h3>
+              <svg class="h-5 w-5 text-primary-600 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-gray-600">Kami menggunakan metode natural tanpa perlu akses login toko Anda. Untuk fake order, kami melakukan pemesanan seperti pembeli biasa. Untuk ulasan Google, kami menggunakan akun-akun real yang sudah terverifikasi.</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+          <details class="group">
+            <summary class="list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition duration-300">
+              <h3 class="text-lg font-semibold text-primary-700">Bagaimana cara refund?</h3>
+              <svg class="h-5 w-5 text-primary-600 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-gray-600">Ajukan komplain via WhatsApp dengan bukti relevan untuk proses refund. Kami akan verifikasi dan memproses refund dalam 1x24 jam jika memang layanan tidak sesuai dengan yang dijanjikan.</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+          <details class="group">
+            <summary class="list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition duration-300">
+              <h3 class="text-lg font-semibold text-primary-700">Pembayaran via apa saja?</h3>
+              <svg class="h-5 w-5 text-primary-600 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-gray-600">Kami menerima transfer bank (BCA, BRI, Mandiri, BNI), e-wallet (Dana, OVO, Gopay, LinkAja), QRIS, serta pembayaran di minimarket (Alfamart, Indomaret).</p>
+            </div>
+          </details>
+        </div>
+        
+        <!-- FAQ Item 5 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+          <details class="group">
+            <summary class="list-none cursor-pointer p-6 flex justify-between items-center hover:bg-gray-50 transition duration-300">
+              <h3 class="text-lg font-semibold text-primary-700">Apakah followers Instagram bisa drop?</h3>
+              <svg class="h-5 w-5 text-primary-600 transform group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-gray-600">Kami menggunakan akun real bukan bot, sehingga kemungkinan drop sangat kecil. Namun jika terjadi drop dalam 30 hari, kami akan replace sesuai ketentuan garansi.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-primary-600 to-secondary-500 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Siap Meningkatkan Bisnis Anda?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        Mulai hari ini dan dapatkan lebih banyak pelanggan dengan reputasi digital yang kuat.
+      </p>
+      <a href="https://wa.me/+6281295984923" class="inline-block bg-white hover:bg-gray-100 text-primary-700 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+        <i class="fab fa-whatsapp mr-2"></i> Hubungi Kami Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/+6281295984923" class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold py-3 px-5 rounded-full shadow-xl flex items-center z-50 transition-all duration-300 transform hover:scale-110 group animate-bounce">
+    <i class="fab fa-whatsapp text-xl mr-2"></i>
+    <span class="hidden md:inline">Chat Via WhatsApp</span>
+    <span class="md:hidden">Chat</span>
+    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center group-hover:animate-ping">!</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-primary-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="text-gradient">ZR</span> Management
+          </h3>
+          <p class="text-primary-200">
+            Jasa profesional untuk meningkatkan reputasi digital bisnis Anda.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Layanan</h4>
+          <ul class="space-y-2">
+            <li><a href="#fake-order" class="text-primary-200 hover:text-white transition duration-300">Fake Order</a></li>
+            <li><a href="#fake-order" class="text-primary-200 hover:text-white transition duration-300">Ulasan Google</a></li>
+            <li><a href="#fake-order" class="text-primary-200 hover:text-white transition duration-300">Followers Sosmed</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Tautan</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-primary-200 hover:text-white transition duration-300">Beranda</a></li>
+            <li><a href="#services" class="text-primary-200 hover:text-white transition duration-300">Layanan</a></li>
+            <li><a href="#garansi" class="text-primary-200 hover:text-white transition duration-300">Garansi</a></li>
+            <li><a href="#faq" class="text-primary-200 hover:text-white transition duration-300">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fab fa-whatsapp mr-2 text-primary-200"></i>
+              <a href="https://wa.me/+6281295984923" class="text-primary-200 hover:text-white transition duration-300">+62 812-9598-4923</a>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-2 text-primary-200"></i>
+              <span class="text-primary-200">zrmanagement@email.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-primary-700 text-center">
+        <p>&copy; 2025 ZR Management. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Tab functionality
+    function openTab(evt, serviceName) {
+      // Hide all tab contents
+      var tabcontents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].style.display = "none";
+      }
+      
+      // Remove active class from all tab buttons
+      var tabbuttons = document.getElementsByClassName("tab-button");
+      for (var i = 0; i < tabbuttons.length; i++) {
+        tabbuttons[i].classList.remove("active", "bg-gradient-to-r", "from-primary-600", "to-secondary-500", "text-white", "shadow-md");
+        tabbuttons[i].classList.add("text-gray-700", "hover:bg-gray-200");
+      }
+      
+      // Show the current tab and add active class
+      document.getElementById(serviceName).style.display = "block";
+      evt.currentTarget.classList.add("active", "bg-gradient-to-r", "from-primary-600", "to-secondary-500", "text-white", "shadow-md");
+      evt.currentTarget.classList.remove("text-gray-700", "hover:bg-gray-200");
+    }
+
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('block');
+      } else {
+        mobileMenu.classList.remove('block');
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
